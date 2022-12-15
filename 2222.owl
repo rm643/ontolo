@@ -1,0 +1,355 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17"
+     xml:base="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Contrpick -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Contrpick">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Agility"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#intelligence"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#strength"/>
+        <rdfs:comment>показывает эффективность героя против других героев</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Roles -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Roles">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Agility"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#intelligence"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#strength"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#carry"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#mider"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#support"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment>оказывает роль героя в текущем матче</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Type_Heroes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Type_Heroes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Agility"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#intelligence"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#strength"/>
+        <rdfs:comment>Показывает к какой стихии относится герой</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#carry -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#carry">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Agility"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#intelligence"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#strength"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Agility"/>
+        <rdfs:comment>Показывает тип героя</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#mider -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#mider">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Agility"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#intelligence"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#strength"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Lina"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Lion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Puck"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Shadow_Fiend"/>
+        <rdfs:comment>Показывает тип героя</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#support -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#support">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Agility"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#intelligence"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#strength"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Bane"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Kunkka"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Lich"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Lina"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Pudge"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Sven"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Tidehunter"/>
+        <rdfs:comment>Показывает тип героя</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#GPM -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#GPM">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#OVM -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#OVM">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#attack -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#attack">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#defense -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#defense">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#speed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#speed">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#winrate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#winrate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Agility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Agility">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#intelligence"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#strength"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Anti-Mage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Anti-Mage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Agility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Axe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Axe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#strength"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Bane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Bane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#intelligence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Bloodseeker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Bloodseeker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Agility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Juggernaut -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Juggernaut">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Agility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Kunkka -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Kunkka">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#strength"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Lich -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Lich">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#intelligence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Lina -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Lina">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#intelligence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Lion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Lion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#intelligence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Morphling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Morphling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Agility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Puck -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Puck">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#intelligence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Pudge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Pudge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#strength"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Shadow_Fiend -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Shadow_Fiend">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Agility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Sven -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Sven">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#strength"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Tidehunter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#Tidehunter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#strength"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#intelligence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#intelligence">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#strength"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#strength -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/сергей/ontologies/2022/10/untitled-ontology-17#strength"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
